@@ -1,0 +1,34 @@
+:root {
+    --primary: #073035;
+    --secondary: #1D6069;
+    --lightPrimary: #79B9C1;
+    --pink: #E78F80;
+    --contentWidth: 1200px
+}
+
+body{
+    widht: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header {
+    height: 200px;
+    background-color: var(--primary);
+}
+
+header .content {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: var(--contentWidth);
+    background-color: var(--pink);
+}
+
+main {
+    max-width: var(--contentWidth);
+    min-height: 300px;
+}
+
+footer {
+
+}
