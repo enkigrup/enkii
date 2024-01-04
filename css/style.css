@@ -1,32 +1,86 @@
+@import url('./helper.css');
+
 :root {
     --primary: #073035;
     --secondary: #1D6069;
     --lightPrimary: #79B9C1;
     --pink: #E78F80;
-    --contentWidth: 1200px
+    --contentWidth: 1100px;
+    --borderColor: #36585B;
+    --text: #333333;
+    --fontSize: 14px;
+    --titleFontSize: 18px;
 }
 
 body{
     widht: 100%;
-    height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
+    color: var(--text);
+    font-size: var(--fontSize);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.42857143;
+    -webkit-text-size-adjust: 100%;
 }
 
+/* ------ Header ------ */
 header {
-    height: 200px;
     background-color: var(--primary);
+    box-shadow: 0px 1px 1px 2px rgba(0,0,0,0.1); 
+    position: sticky;
+    width: 100%;
+    top: 0;   
 }
 
-header .content {
-    margin: 0 auto;
-    padding: 10px;
+header .menu {
     max-width: var(--contentWidth);
-    background-color: var(--pink);
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 16px;
 }
+
+header .menu .logo-wrapper{
+    flex: 1.2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header .menu .right, header .menu .left{
+    flex: 1;
+}
+
+header .menu .right ul li, header .menu .left ul li{
+    display: inline-block;
+}
+
+.menu-link{
+    display: block;
+    padding: 30px 10px;
+    min-width: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link.active{
+    background: rgb(7,48,53);
+    background: linear-gradient(180deg, rgba(7,48,53,1) 0%, rgba(121,185,193,.2) 100%);
+    box-shadow: 0px 1px 1px 2px rgba(0,0,0,0.1);
+}
+
 
 main {
     max-width: var(--contentWidth);
     min-height: 300px;
+    margin: 0 auto;
+}
+main .content-area {
+
+    min-height: 300px;
+    background: red;
 }
 
 footer {
