@@ -1,3 +1,12 @@
+$(window).load(function(){
+  $('#workerroadmap').height(window.innerHeight - 82);
+  $('.video-player').height(window.innerHeight);
+})
+
+$(window).on("resize", function(){
+  $('#workerroadmap').height(window.innerHeight - 82);
+})
+
 function menuOnScroll(mySection, myMenu, myClass) {
     $(window).scroll(function(){
       const elScroll = $(window).scrollTop() + 87;

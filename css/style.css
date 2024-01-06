@@ -4,7 +4,7 @@
 :root {
     --primary: #073035;
     --secondary: #1D6069;
-    --lightPrimary: #79B9C1;
+    --lightPrimary: #5EA4B4;
     --pink: #E78F80;
     --contentWidth: 1100px;
     --borderColor: #36585B;
@@ -79,7 +79,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-    font-size: 1.25rem;
+    font-size: 18px;
 }
 
 h6, .h6 {
@@ -159,17 +159,24 @@ main {
     margin: 0 auto;
 }
 
-#workerroadmap{ position: relative; height: 768px; color: white; background: var(--primary); overflow: hidden;}
+#workerroadmap{     
+    text-align: center;
+    position: relative; 
+    height: 768px; 
+    color: white; 
+    background: var(--primary); 
+    overflow: hidden;
+}
 #workerroadmap .call-to-actions {
     position: relative;
     z-index: 7;
     color: white;
-    padding-top: 50px;
+    padding-top: 5%;
 }
 #workerroadmap .home-content-bg {
     height: 385px;
     position: relative;
-    top: 8%;
+    top: 1%;
     max-width: var(--contentWidth);
     margin: 0 auto;
     background: url('../images/home-top.png') no-repeat center;
@@ -177,6 +184,22 @@ main {
 }
 #workerroadmap .home-content-bg .list-style {
     margin-top: 30px;list-style-type: disc;
+}
+.box-effect{
+    position: absolute;
+    width: 101px;
+    height: 52px;
+    z-index: 7;
+    background: url('../images/dot.png') no-repeat center;
+    top: 40%;
+}
+
+.box-effect-left{
+    left: 10%;
+}
+
+.box-effect-right{
+    right: 10%;
 }
 
 #workerroadmap .home-content-bg .left {
@@ -197,14 +220,46 @@ main {
     z-index: 7;
 }
 
+#workerroadmap .home-content-bg .left .icon-hand {
+    position: absolute;
+    left: -90px;
+    top: 40px;
+    width: 72px;
+    height: 40px;
+    background: url('../images/hand.png') no-repeat center;
+}
+
 .video-player {
     position: absolute;
-    top: -10px;
+    top: -100px;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .video-player{
+        height: 600px;
+    }
+    video {
+        object-fit: fill;
+        overflow-clip-margin: content-box;
+        overflow: clip;
+    }
+}
+
+.btn-position{
+    top: 50px;
+    padding: 10px 14px;
+    background: var(--lightPrimary);
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+    z-index: 7;
+    font-size: 16px;
 }
 
 video {
