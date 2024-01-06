@@ -1,10 +1,9 @@
 $(window).load(function(){
-  $('#workerroadmap').height(window.innerHeight - 82);
-  $('.video-player').height(window.innerHeight);
+  $('#workerroadmap').height(window.innerHeight);
 })
 
 $(window).on("resize", function(){
-  $('#workerroadmap').height(window.innerHeight - 82);
+  $('#workerroadmap').height(window.innerHeight);
 })
 
 function menuOnScroll(mySection, myMenu, myClass) {
