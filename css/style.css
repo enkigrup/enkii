@@ -255,7 +255,7 @@ video {
     font-size: 16px;
 }
 
-#workerroadmap {
+#workbox {
     margin-top: 18px;
     background: white;
     display: flex;
@@ -263,24 +263,40 @@ video {
     padding: 10px;
 }
 
-#workerroadmap .container{ 
+
+#workbox .container{ 
     gap: 28px; 
 }
 
-#workerroadmap .card{
+@media (max-width: 1200px) {
+    #workbox .container{
+        gap: 0;
+        flex-direction: column !important; 
+    }
+
+    #workbox .card img {
+        top: 0px !important;
+        right: 10px !important;
+        width: 45px !important;
+        height: 45px !important;
+    }
+}
+
+#workbox .card{
     width: 100%;
     height: 230px;
     background: var(--gray);
     position: relative;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
-#workerroadmap .card .up h3{
+#workbox .card .up h3{
     margin-top: 65px;
     margin-left: 32px;
 }
 
-#workerroadmap .card img {
+#workbox .card img {
     width: 77px;
     height: 77px;
     position: absolute;
@@ -289,13 +305,13 @@ video {
     background-color: var(--primary);
 }
 
-#workerroadmap .card .down {
+#workbox .card .down {
     width: 100%;
     bottom: 0;
     position: absolute;
 }
 
-#workerroadmap .card .down h5{
+#workbox .card .down h5{
     padding: 20px 0 20px 20px;
 }
 main .content-area {
