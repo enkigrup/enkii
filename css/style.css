@@ -1,4 +1,5 @@
 @import url('./helper.css');
+@import url('./responsive.css');
 
 :root {
     --primary: #073035;
@@ -12,17 +13,83 @@
     --titleFontSize: 18px;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--lightPrimary);
+    border-radius: 4px;
+}
+
 body{
     widht: 100%;
     min-height: 100vh;
     margin: 0 auto;
     color: var(--text);
     font-size: var(--fontSize);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     line-height: 1.42857143;
     -webkit-text-size-adjust: 100%;
 }
 
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif !important;
+}
+  
+h1, .h1 {
+    font-size: 48px;
+}
+@media (min-width: 1200px) {
+    h1, .h1 {
+        font-size: 48px;
+    }
+}
+
+h2, .h2 {
+    font-size: 32px;
+}
+@media (min-width: 1200px) {
+    h2, .h2 {
+        font-size: 32px;
+    }
+}
+
+h3, .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+    h3, .h3 {
+        font-size: 1.75rem;
+    }
+}
+h4, .h4 {
+    font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+    h4, .h4 {
+        font-size: 1.5rem;
+    }
+}
+
+h5, .h5 {
+    font-size: 1.25rem;
+}
+
+h6, .h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 /* ------ Header ------ */
 header {
     background-color: var(--primary);
@@ -30,17 +97,18 @@ header {
     position: sticky;
     width: 100%;
     top: 0;   
+    z-index: 10;
 }
 
 header .menu {
     max-width: var(--contentWidth);
     margin: 0 auto;
-    padding: 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: white;
     font-size: 16px;
+    box-shadow: 2px 2px 0px -2px rgba(0,0,0,0.3);
 }
 
 header .menu .logo-wrapper{
@@ -57,6 +125,15 @@ header .menu .right ul li, header .menu .left ul li{
     display: inline-block;
 }
 
+.social-media {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-media ul li {
+    margin-left: 10px;
+}
 .menu-link{
     display: block;
     padding: 30px 10px;
@@ -68,19 +145,85 @@ header .menu .right ul li, header .menu .left ul li{
 .menu-link.active{
     background: rgb(7,48,53);
     background: linear-gradient(180deg, rgba(7,48,53,1) 0%, rgba(121,185,193,.2) 100%);
-    box-shadow: 0px 1px 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 2px -2px rgba(0,0,0,0.1);
 }
 
 
 main {
-    max-width: var(--contentWidth);
     min-height: 300px;
+    widht: 100%;
+}
+
+.container{
+    max-width: var(--contentWidth);
     margin: 0 auto;
 }
-main .content-area {
 
+#workerroadmap{ position: relative; height: 768px; color: white; background: var(--primary); overflow: hidden;}
+#workerroadmap .call-to-actions {
+    position: relative;
+    z-index: 7;
+    color: white;
+    padding-top: 50px;
+}
+#workerroadmap .home-content-bg {
+    height: 385px;
+    position: relative;
+    top: 8%;
+    max-width: var(--contentWidth);
+    margin: 0 auto;
+    background: url('../images/home-top.png') no-repeat center;
+    z-index: 7;
+}
+#workerroadmap .home-content-bg .list-style {
+    margin-top: 30px;list-style-type: disc;
+}
+
+#workerroadmap .home-content-bg .left {
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    z-index: 7;
+}
+
+#workerroadmap .home-content-bg .right {
+    height: 100px;
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 7;
+}
+
+.video-player {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+video {
+    object-fit: cover;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+// TODO: Bakılacak
+#workerroadmap .home-content-bg::before {
+    width: 200px;
+    height: 100px;
+    background: url('../images/dot.png') no-repeat left 0 0;
+}
+
+
+main .content-area {
     min-height: 300px;
-    background: red;
+    background: black;
 }
 
 footer {

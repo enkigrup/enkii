@@ -1,6 +1,6 @@
 function menuOnScroll(mySection, myMenu, myClass) {
     $(window).scroll(function(){
-      var elScroll = $(window).scrollTop();
+      const elScroll = $(window).scrollTop() + 87;
       $(mySection).each(function(i){
         if ($(this).offset().top <= elScroll) {
           $(myMenu).removeClass(myClass);
@@ -11,12 +11,12 @@ function menuOnScroll(mySection, myMenu, myClass) {
   }
   menuOnScroll('.content-area','.menu-link', 'active');
   function scrollToAnyPoint (navItem) {
-    var getAttr;
+    let getAttr;
     $(navItem).click(function(e){
       e.preventDefault();
       getAttr = $(this).attr('href');
-      var toSection = $(getAttr).offset().top + 10;
-      $("html, body").animate({scrollTop:toSection}, 1000)
+      const toSection = $(getAttr).offset().top - 77;
+      $("html, body").animate({scrollTop:toSection}, 300)
     });
   }
   scrollToAnyPoint('.menu-link');
