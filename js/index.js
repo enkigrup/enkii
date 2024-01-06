@@ -1,9 +1,9 @@
 $(window).load(function(){
-  $('#workerroadmap').height(window.innerHeight);
+  $('#home').height(window.innerHeight);
 })
 
 $(window).on("resize", function(){
-  $('#workerroadmap').height(window.innerHeight);
+  $('#home').height(window.innerHeight);
 })
 
 function menuOnScroll(mySection, myMenu, myClass) {
@@ -17,7 +17,7 @@ function menuOnScroll(mySection, myMenu, myClass) {
       });
     });
   }
-  menuOnScroll('.content-area','.menu-link', 'active');
+  menuOnScroll('.content-area','.menu a', 'active');
   function scrollToAnyPoint (navItem) {
     let getAttr;
     $(navItem).click(function(e){

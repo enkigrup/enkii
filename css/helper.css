@@ -37,3 +37,15 @@
 .ms-20{
     margin-left: 20px;
 }
+
+.p-relative{
+    position: relative;
+}
+
+.bg-primary{
+    background: var(--primary);
+}
+
+.text-white{
+    color: white !important;
+}
