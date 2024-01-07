@@ -6,25 +6,35 @@ $(window).on("resize", function(){
   $('#home').height(window.innerHeight);
 })
 
-function menuOnScroll(mySection, myMenu, myClass) {
-    $(window).scroll(function(){
-      const elScroll = $(window).scrollTop() + 87;
-      $(mySection).each(function(i){
-        if ($(this).offset().top <= elScroll) {
-          $(myMenu).removeClass(myClass);
-          $(myMenu).eq(i).addClass(myClass);
-        }
-      });
-    });
-  }
-  menuOnScroll('.content-area','.menu a', 'active');
-  function scrollToAnyPoint (navItem) {
-    let getAttr;
-    $(navItem).click(function(e){
+$(document).ready(function () {
+  $(document).on("scroll", onScroll);
+  $('a[href^="#"]').on('click', function (e) {
       e.preventDefault();
-      getAttr = $(this).attr('href');
-      const toSection = $(getAttr).offset().top - 77;
-      $("html, body").animate({scrollTop:toSection}, 300)
-    });
-  }
-  scrollToAnyPoint('.menu-link');
+      $(document).off("scroll");
+      $('a').each(function () {
+          $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+      var target = this.hash,
+          menu = target;
+      $target = $(target);
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top - 82
+      }, 300);
+  });
+});
+
+function onScroll(event){
+  var scrollPos = $(document).scrollTop() + 82;
+  $('.menu a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('.static-url').removeClass("active");
+          currLink.addClass("active");
+      }
+      else{
+          currLink.removeClass("active");
+      }
+  });
+}

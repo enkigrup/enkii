@@ -161,7 +161,7 @@ main {
 #home .home-content-bg {
     height: 345px;
     position: relative;
-    top: 40px;
+    top: 30px;
     max-width: var(--contentWidth);
     margin: 0 auto;
     background: url('../images/home-top.png') no-repeat center;
@@ -255,26 +255,27 @@ video {
     font-size: 16px;
 }
 
-#workbox {
+.workbox {
     margin-top: 18px;
     background: white;
     display: flex;
     width: 100%;
     padding: 10px;
+    height: 240px;
 }
 
 
-#workbox .container{ 
+.workbox .container{ 
     gap: 28px; 
 }
 
 @media (max-width: 1200px) {
-    #workbox .container{
+    .workbox .container{
         gap: 0;
         flex-direction: column !important; 
     }
 
-    #workbox .card img {
+    .workbox .card img {
         top: 0px !important;
         right: 10px !important;
         width: 45px !important;
@@ -282,7 +283,7 @@ video {
     }
 }
 
-#workbox .card{
+.workbox .card{
     width: 100%;
     height: 230px;
     background: var(--gray);
@@ -291,12 +292,12 @@ video {
     margin-bottom: 10px;
 }
 
-#workbox .card .up h3{
+.workbox .card .up h3{
     margin-top: 65px;
     margin-left: 32px;
 }
 
-#workbox .card img {
+.workbox .card img {
     width: 77px;
     height: 77px;
     position: absolute;
@@ -305,19 +306,19 @@ video {
     background-color: var(--primary);
 }
 
-#workbox .card .down {
+.workbox .card .down {
     width: 100%;
     bottom: 0;
     position: absolute;
 }
 
-#workbox .card .down h5{
+.workbox .card .down h5{
     padding: 20px 0 20px 20px;
 }
 main .content-area {
     min-height: 300px;
-    background: black;
     position: relative;
+    margin-bottom: 20px;
 }
 
 footer {
