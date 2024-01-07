@@ -51,3 +51,7 @@ $('.list-item-title').on('click', function () {
 $('.list-item-title').on('click', function () {
     $(this).closest('.content').slideToggle();
 });
+
+$('.mobile-menu-button').click(function () {
+  $('.mobile-menu').toggle();
+});

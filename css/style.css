@@ -102,7 +102,7 @@ header .menu {
 header .menu .logo-wrapper{
     flex: 1.2;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 header .menu .right, header .menu .left{
@@ -112,6 +112,7 @@ header .menu .right, header .menu .left{
 header .menu .right ul li, header .menu .left ul li{
     display: inline-block;
 }
+
 
 .social-media {
     position: absolute;
@@ -136,6 +137,29 @@ header .menu .right ul li, header .menu .left ul li{
     box-shadow: 2px 2px 2px -2px rgba(0,0,0,0.1);
 }
 
+.mobile-menu-button{
+    position: absolute;
+    display: none;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: url('../images/menu.svg') no-repeat;
+}
+
+@media (max-width: 1200px){
+    header .menu .right,
+    header .menu .left { display: none;}
+    .menu-link{
+        padding: 10px;
+    }
+
+    .mobile-menu-button{ display: block;}
+    header .menu .logo-wrapper{
+        width: 100%;
+    }
+}
 
 main {
     min-height: 300px;
