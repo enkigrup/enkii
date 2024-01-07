@@ -54,6 +54,10 @@
     background-color: var(--lightPrimary);
 }
 
+.bg-gray{
+    background: var(--gray);
+}
+
 .bg-pink{
     background-color: var(--pink);
 }
