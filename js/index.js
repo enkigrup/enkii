@@ -13,6 +13,7 @@ $(document).ready(function () {
       $(document).off("scroll");
       $('a').each(function () {
           $(this).removeClass('active');
+          $('.mobile-menu').hide();
       })
       $(this).addClass('active');
       var target = this.hash,
