@@ -319,11 +319,12 @@ video {
 
 #workerroadmap {
     position: relative;
-    background-color: var(--gray)
+    background-color: var(--gray);
+    padding-bottom: 100px;
 }
 
 #workerroadmap .title{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
 }
 
@@ -331,6 +332,39 @@ video {
     width: calc(100% - 40px);
     padding: 0 20px;
     margin-bottom: 50px;
+}
+#workerroadmap .list-wrapper{
+    display: flex;
+    margin-bottom: 50px;
+}
+#workerroadmap .lists{
+    width: 100%;
+    margin-left: 10px;
+    flex: 1;
+    position: relative;
+}
+
+#workerroadmap .list-item {margin-bottom: 10px;}
+
+#workerroadmap .list-item .list-item-title{
+    cursor: pointer;
+    padding: 20px 24px;
+    width: calc(100% - 48px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#workerroadmap .list-item .content{
+    position: absolute;
+    background: white;
+    padding: 20px 24px;
+    width: calc(100% - 48px);
+    max-height: 160px;
+    overflow: auto;
+    display: none;
+}
+#workerroadmap .list-item .content.active{
+    display: block;
 }
 
 main .content-area {

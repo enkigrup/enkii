@@ -38,3 +38,16 @@ function onScroll(event){
       }
   });
 }
+
+var content = $('.content').hide();
+$('.list-item-title').on('click', function () {
+    var the_others = $('.active').not(this);
+    the_others.removeClass('active');
+    the_others.next('.content').slideUp();
+    $(this).next('.content').slideToggle();
+    $(this).toggleClass('active');
+    return false;
+});
+$('.list-item-title').on('click', function () {
+    $(this).closest('.content').slideToggle();
+});
