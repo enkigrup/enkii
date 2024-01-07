@@ -142,8 +142,8 @@ header .menu .right ul li, header .menu .left ul li{
     display: none;
     top: 20px;
     left: 20px;
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
     background: url('../images/menu.svg') no-repeat;
 }
@@ -183,13 +183,17 @@ main {
     color: white;
     padding-top: 30px;
 }
+
+
 #home .home-content-bg {
     height: 345px;
     position: relative;
     top: 30px;
     max-width: var(--contentWidth);
     margin: 0 auto;
-    background: url('../images/home-top.png') no-repeat center;
+    background-image: url('../images/home-top.png');
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 7;
 }
 #home .home-content-bg .list-style {
@@ -234,6 +238,27 @@ main {
     top: 76px;
     right: 40px;
     z-index: 7;
+}
+
+@media (max-width: 1200px) {
+    #home .home-content-bg .right,
+    #home .home-content-bg .left {
+        position: initial;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #home .home-content-bg{
+        text-align: center;
+        background-image: none !important;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #home .home-content-bg .list-style {
+        list-style-type: none;
+    }
+
 }
 
 #home .home-content-bg .left .icon-hand {
