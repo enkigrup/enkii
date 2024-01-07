@@ -426,6 +426,9 @@ video {
 }
 
 #workerroadmap .list-item {margin-bottom: 10px;}
+#workerroadmap .list-item:active, #workerroadmap .list-item:focus {
+    
+}
 
 #workerroadmap .list-item .list-item-title{
     cursor: pointer;
