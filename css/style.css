@@ -360,6 +360,12 @@ video {
     background-color: var(--primary);
 }
 
+@media (max-width: 1200px) {
+    .workbox .card img {
+        top: 0;
+    }
+}
+
 .workbox .card .up{ 
     padding: 10px;
     height: 100px;
