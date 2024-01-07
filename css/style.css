@@ -271,21 +271,17 @@ video {
 }
 
 @media (max-width: 1200px) {
+    .workbox{
+        height: 380px;
+    }
     .workbox .container{
         gap: 0;
         flex-direction: column !important; 
     }
-
-    .workbox .card img {
-        top: 0px !important;
-        right: 10px !important;
-        width: 45px !important;
-        height: 45px !important;
-    }
 }
 
 .workbox .card{
-    width: 100%;
+    width: calc(100% - 20px);
     height: 180px;
     background: var(--gray);
     position: relative;
@@ -302,15 +298,21 @@ video {
     background-color: var(--primary);
 }
 
+.workbox .card .up{ 
+    padding: 10px;
+    height: 100px;
+}
 .workbox .card .up h3{
-    margin-left: 32px;
-    margin-top: 40px;
+    position: relative;
+    top: 30px;
+    left: 32px;
+
 }
 
 .workbox .card .down {
     width: 100%;
-    bottom: 0;
-    position: absolute;
+    min-height: 60px;
+    position: relative;
 }
 
 .workbox .card .down h5{
@@ -337,8 +339,16 @@ video {
     display: flex;
     margin-bottom: 50px;
 }
+
+@media (max-width: 1200px){
+    #workerroadmap .list-wrapper{
+        display: block;
+        margin-bottom: 50px;
+    }
+}
+
 #workerroadmap .lists{
-    width: 100%;
+    width: calc(100% - 20px);
     margin-left: 10px;
     flex: 1;
     position: relative;
@@ -356,6 +366,7 @@ video {
 }
 #workerroadmap .list-item .content{
     position: absolute;
+    z-index: 7;
     background: white;
     padding: 20px 24px;
     width: calc(100% - 48px);
@@ -363,6 +374,18 @@ video {
     overflow: auto;
     display: none;
 }
+#workerroadmap .list-item .list-item-title .toggle-icon{
+    width: 40px;
+    height: 20px;
+    background: url('../images/down-icon.png') no-repeat center;
+}
+
+#workerroadmap .list-item .list-item-title.active .toggle-icon{
+    width: 40px;
+    height: 20px;
+    background: url('../images/up-icon.png') no-repeat center;
+}
+
 #workerroadmap .list-item .content.active{
     display: block;
 }
