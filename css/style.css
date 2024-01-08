@@ -407,7 +407,8 @@ video {
 
 #workerroadmap {
     position: relative;
-    background-color: var(--gray);
+    background: rgb(255,255,255);
+    background: linear-gradient(5deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 41%, rgba(217,217,217,1) 100%);
     padding-bottom: 100px;
 }
 
