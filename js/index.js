@@ -16,9 +16,8 @@ $(document).ready(function () {
       $(".mobile-menu").hide();
     });
     $(this).addClass("active");
-    var target = this.hash,
-      menu = target;
-    $target = $(target);
+    const target = this.hash;
+    const $target = $(target);
     $("html, body")
       .stop()
       .animate(
@@ -31,10 +30,10 @@ $(document).ready(function () {
 });
 
 function onScroll(event) {
-  var scrollPos = $(document).scrollTop() + 82;
+  const scrollPos = $(document).scrollTop() + 82;
   $(".menu a").each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
+    const currLink = $(this);
+    const refElement = $(currLink.attr("href"));
     if (
       refElement.position().top <= scrollPos &&
       refElement.position().top + refElement.height() > scrollPos
