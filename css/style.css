@@ -478,7 +478,7 @@ video {
     height: auto;
     clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
     padding-top: 120px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 
 #seniorleague .filters {
@@ -522,9 +522,17 @@ footer {
     color: var(--secondary)
 }
 
-.profile img {
+.profile .profile-image {
     margin: 20px 0;
     border: 1px solid #EDEDED;
     border-radius: 50%;
     padding: 5px;
+}
+.profile .social-media-links {
+    justify-content: center;
+    padding: 9px 0;
+}
+
+.profile .social-media-links li {
+    margin-right: 4px;
 }
