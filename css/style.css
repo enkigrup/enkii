@@ -37,6 +37,9 @@ body{
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 0;
@@ -507,8 +510,35 @@ main .content-area {
 }
 
 footer {
-
+    padding: 100px 0 30px 0;
 }
+
+footer .footer-top h6 {
+    margin-top: 20px;
+}
+
+footer .footer-middle ul{
+    gap: 50px;
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+
+footer .footer-links, 
+footer .footer-bottom{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer .footer-bottom li li{
+    margin-right: 4px;
+}
+
+footer .footer-links a{
+    color: white;    
+}
+
 
 .profile{
     flex: 1;
