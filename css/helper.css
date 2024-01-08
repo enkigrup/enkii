@@ -1,83 +1,92 @@
-.d-flex{
-    display: flex
+.d-flex {
+  display: flex;
 }
 
-.flex-1{
-    flex: 1;
+.flex-1 {
+  flex: 1;
 }
-.hide { display: none; }
+.hide {
+  display: none;
+}
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
-.d-block{
-    display: block;
+.d-block {
+  display: block;
 }
 
-.font-weight-200{
-    font-weight: 200;
+.font-weight-200 {
+  font-weight: 200;
 }
-.font-weight-100{
-    font-weight: 100;
+.font-weight-100 {
+  font-weight: 100;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    border: 0;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 0;
 }
 
-.ms-20{
-    margin-left: 20px;
+.ms-20 {
+  margin-left: 20px;
 }
 
-.p-relative{
-    position: relative;
+.ms-10 {
+  margin-left: 10px;
+}
+.me-10 {
+  margin-right: 10px;
 }
 
-.bg-primary{
-    background-color: var(--primary);
+.p-relative {
+  position: relative;
 }
 
-.bg-secondary{
-    background-color: var(--secondary);
-}
-.bg-light-primary{
-    background-color: var(--lightPrimary);
+.bg-primary {
+  background-color: var(--primary);
 }
 
-.bg-gray{
-    background: var(--gray);
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.bg-light-primary {
+  background-color: var(--lightPrimary);
 }
 
-.bg-pink{
-    background-color: var(--pink);
+.bg-gray {
+  background: var(--gray);
 }
 
-.bg-primary{
-    background: var(--primary);
+.bg-pink {
+  background-color: var(--pink);
 }
 
-.text-white{
-    color: white !important;
+.bg-primary {
+  background: var(--primary);
 }
 
-.w-100{
-    width: 100%;
+.text-white {
+  color: white !important;
 }
 
-.flex-1{
-    flex: 1;
+.w-100 {
+  width: 100%;
 }
 
-hr{
-    border: 1px solid rgb(255, 255, 255, 0.1)
+.flex-1 {
+  flex: 1;
+}
+
+hr {
+  border: 1px solid rgb(255, 255, 255, 0.1);
 }
