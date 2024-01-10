@@ -643,6 +643,13 @@ footer .footer-links a {
   z-index: 10;
 }
 
+@media (max-width: 1200px) {
+  #backToHome {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
 #backToHome img {
   padding: 8px 6px;
 }
