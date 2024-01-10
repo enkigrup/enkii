@@ -8,7 +8,7 @@ $(window).on("resize", function () {
 
 $(document).ready(function () {
   $(document).on("scroll", onScroll);
-  $('a[href^="#"]').on("click", function (e) {
+  $(".static-url").on("click", function (e) {
     e.preventDefault();
     $(document).off("scroll");
     $("a").each(function () {
@@ -61,4 +61,18 @@ $(".list-item-title").on("click", function () {
 
 $(".mobile-menu-button").click(function () {
   $(".mobile-menu").toggle();
+});
+
+var btn = $("#backToHome");
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "300");
 });
