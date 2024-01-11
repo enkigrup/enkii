@@ -560,6 +560,7 @@ footer .footer-top h6 {
 }
 
 footer .footer-middle ul {
+  display: flex;
   gap: 50px;
   margin-top: 80px;
   padding-bottom: 30px;
@@ -568,17 +569,31 @@ footer .footer-middle ul {
 footer .footer-links,
 footer .footer-bottom {
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 20px;
-}
-
-footer .footer-bottom li li {
-  margin-right: 4px;
+  display: flex;
 }
 
 footer .footer-links a {
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  footer .footer-middle ul {
+    font-size: 12px;
+  }
+
+  footer .footer-links,
+  footer .footer-middle ul {
+    font-size: 10px;
+  }
+  footer .footer-links img {
+    width: 30px;
+  }
+  footer .footer-links a {
+    display: block !important;
+  }
 }
 
 .profile-items {
