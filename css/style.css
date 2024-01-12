@@ -618,6 +618,10 @@ video {
   padding: 60px 0 60px 10%;
 }
 
+#about .whatwehappen .container h1 {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1200px) {
   #about .whatwehappen {
     clip-path: polygon(18% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
