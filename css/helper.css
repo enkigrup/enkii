@@ -103,7 +103,8 @@ hr {
   font-size: 48px;
 }
 
-.bottom-text {}
+.bottom-text {
+}
 .bottom-text:after {
   content: "***";
   font-size: 36px;
@@ -112,4 +113,8 @@ hr {
 
 .p-10 {
   padding: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
