@@ -16,8 +16,12 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 2px;
   border-radius: 4px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -185,6 +189,16 @@ header .menu .left ul li {
   background: rgb(7, 48, 53);
   background: linear-gradient(180deg, rgba(7, 48, 53, 1) 0%, rgba(121, 185, 193, 0.2) 100%);
   box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+.bg-color {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    5deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 41%,
+    rgba(217, 217, 217, 1) 100%
+  );
 }
 
 .mobile-menu-button {
@@ -512,24 +526,37 @@ video {
 
 #seniorleague {
   background: var(--borderColor);
-  min-height: 400px;
   padding-left: 10px;
   padding-right: 10px;
+  min-height: 400px;
   height: auto;
   clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
   padding-top: 120px;
-  padding-bottom: 150px;
+}
+
+#seniorleague .container {
+  padding-bottom: 100px;
 }
 
 @media screen and (max-width: 1200px) {
   #seniorleague {
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
   }
+
+  #seniorleague .filters {
+    overflow: auto !important;
+  }
+  #seniorleague .filters li {
+    width: 200px;
+    display: inline-block;
+  }
 }
 #seniorleague .filters {
   width: 100%;
+  display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  overflow: hidden;
 }
 
 #seniorleague .filters li {
@@ -546,9 +573,72 @@ video {
   border-color: var(--secondary);
 }
 
+#about {
+  /* clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%); */
+  /* min-height: 400px;
+  height: auto; */
+}
+#about .ontheroad {
+  padding: 30px 0;
+}
+
+#about .ontheroad .ontheroad-content {
+  display: flex;
+  flex: 6;
+  gap: 30px;
+}
+
+#about .ontheroad .ontheroad-content img {
+  flex: 3;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  #about .ontheroad .ontheroad-content img {
+    display: none;
+  }
+}
+
+#about .ontheroad .ontheroad-content aside {
+  flex: 3;
+}
+
+#about .whatwehappen {
+  background: var(--primary);
+  clip-path: polygon(24% 0, 100% 0, 100% 100%, 24% 100%, 0 50%);
+  min-height: 600px;
+  height: auto;
+  display: flex;
+}
+
+#about .whatwehappen .container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  padding: 60px 0 60px 10%;
+}
+
+@media (max-width: 1200px) {
+  #about .whatwehappen {
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
+  }
+
+  #about .whatwehappen .container {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+#about .whatwehappen .container img {
+  padding-top: 10%;
+  padding-left: 10%;
+}
+#about .whatwehappen .ontheroad-content {
+  padding-left: 10%;
+}
+
 main .content-area {
   position: relative;
-  margin-bottom: 20px;
 }
 
 footer {
