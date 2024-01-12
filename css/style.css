@@ -2,12 +2,12 @@
 @import url("./responsive.css");
 
 :root {
-  --primary: #073035;
-  --secondary: #1d6069;
-  --lightPrimary: #5ea4b4;
+  --primary: #0389e2;
+  --secondary: #3db2ff;
+  --lightPrimary: #087cc9;
   --pink: #e78f80;
   --contentWidth: 1100px;
-  --borderColor: #36585b;
+  --borderColor: #087cc9;
   --text: #333333;
   --fontSize: 14px;
   --titleFontSize: 18px;
@@ -186,9 +186,8 @@ header .menu .left ul li {
 }
 
 .menu-link.active {
-  background: rgb(7, 48, 53);
-  background: linear-gradient(180deg, rgba(7, 48, 53, 1) 0%, rgba(121, 185, 193, 0.2) 100%);
-  box-shadow: 2px 2px 2px -2px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, rgba(8, 124, 201, 0.2) 0%, rgba(61, 178, 255, 1) 100%);
+  box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.1);
 }
 
 .bg-color {
@@ -478,8 +477,8 @@ video {
 
 #workerroadmap .lists {
   width: calc(100% - 20px);
-  margin-left: 10px;
   flex: 1;
+  margin-left: 10px;
   position: relative;
 }
 
@@ -574,9 +573,6 @@ video {
 }
 
 #about {
-  /* clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%); */
-  /* min-height: 400px;
-  height: auto; */
   width: 100%;
   height: auto;
 }
@@ -714,7 +710,6 @@ footer .footer-links a {
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
-  color: var(--secondary);
 }
 
 .profile:hover {

@@ -108,7 +108,7 @@ hr {
 .bottom-text:after {
   content: "***";
   font-size: 36px;
-  color: #949494;
+  color: #eeeeee;
 }
 
 .p-10 {
