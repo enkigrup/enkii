@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
   border-radius: 4px;
 }
 
@@ -27,6 +27,12 @@
 ::-webkit-scrollbar-thumb {
   background-color: var(--lightPrimary);
   border-radius: 4px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
