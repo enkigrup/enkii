@@ -535,7 +535,7 @@ video {
   padding-right: 10px;
   min-height: 400px;
   height: auto;
-  clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   padding-top: 120px;
 }
 
@@ -705,10 +705,9 @@ footer .footer-links a {
 }
 
 .profile {
-  cursor: pointer;
   width: calc(100% / 5 - 1%);
   margin-right: 1%;
-  height: 240px;
+  height: 300px;
   position: relative;
   top: 0;
   background: white;
@@ -716,14 +715,18 @@ footer .footer-links a {
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
+  transition-property: all;
+  transition-duration: 0.3s;
+  filter: grayscale(100%);
 }
 
 .profile:hover {
   top: -6px;
   transition-property: all;
   transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0, 0.3, 0.3, 1);
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+  transition-timing-function: linear;
+  box-shadow: 0px 12px 12px 4px rgba(33, 33, 33, 0.5);
+  filter: none;
 }
 
 @media (max-width: 1200px) {
@@ -744,7 +747,8 @@ footer .footer-links a {
   border: 1px solid #ededed;
   border-radius: 50%;
   padding: 5px;
-  max-width: 120px;
+  width: 120px;
+  height: 180px;
 }
 .profile .social-media-links {
   justify-content: center;
