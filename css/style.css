@@ -620,10 +620,12 @@ video {
 
 #about .whatwehappen {
   background: var(--primary);
-  clip-path: polygon(24% 0, 100% 0, 100% 100%, 24% 100%, 0 50%);
-  min-height: 600px;
-  height: auto;
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
+  height: 700px;
   display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 #about .whatwehappen .container {
@@ -765,7 +767,13 @@ footer .footer-links a {
 
 .perspective {
   width: 100%;
-  background: url("../images/contact.png") no-repeat top center;
+  background-position: top center;
+  background-size: cover;
+  background-image: url("../images/contact.png");
+  position: relative;
+  top: -350px;
+  padding-top: 300px;
+  z-index: 1;
 }
 
 .perspective .container {
@@ -773,6 +781,9 @@ footer .footer-links a {
 }
 .perspective .container .p-content {
   margin: 140px 0;
+}
+
+@media (max-width: 1200px) {
 }
 
 .footer-contact {
@@ -799,7 +810,7 @@ footer .footer-links a {
   content: "";
 }
 .our-products {
-  padding: 50px 0;
+  margin: -150px 0 0px 0;
 }
 
 .our-products h1 {
