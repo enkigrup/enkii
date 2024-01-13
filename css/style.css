@@ -655,13 +655,6 @@ video {
   padding-left: 10%;
 }
 
-#contact {
-  width: 100%;
-  height: 1000px;
-  top: -50%;
-  background: url("../images/contact.png") no-repeat;
-}
-
 main .content-area {
   position: relative;
 }
@@ -776,7 +769,10 @@ footer .footer-links a {
 }
 
 .perspective .container {
-  padding-top: 100px;
+  padding: 100px 0;
+}
+.perspective .container .p-content {
+  margin: 140px 0;
 }
 
 .footer-contact {

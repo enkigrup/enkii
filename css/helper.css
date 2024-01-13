@@ -13,6 +13,10 @@
   align-self: center;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -59,6 +63,14 @@
   margin-right: 10px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 .p-relative {
   position: relative;
 }
@@ -100,6 +112,9 @@
 
 .gap-10 {
   gap: 10px;
+}
+.gap-40 {
+  gap: 40px;
 }
 
 hr {
