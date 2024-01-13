@@ -781,9 +781,24 @@ footer .footer-links a {
 }
 .perspective .container .p-content {
   margin: 140px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 @media (max-width: 1200px) {
+  .perspective .container {
+    text-align: center;
+  }
+
+  .perspective .container .p-content {
+    display: block !important;
+  }
+
+  .perspective .container .p-content h5 {
+    margin-top: 40px;
+  }
 }
 
 .footer-contact {
