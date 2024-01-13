@@ -2,6 +2,17 @@
   display: flex;
 }
 
+.jbetween {
+  justify-content: space-between;
+}
+.jaround {
+  justify-content: space-around;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
 .flex-1 {
   flex: 1;
 }

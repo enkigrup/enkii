@@ -377,6 +377,17 @@ video {
   font-size: 16px;
 }
 
+.btn-primary {
+  padding: 10px 14px;
+  background: var(--lightPrimary);
+  color: white;
+  font-size: 16px;
+}
+
+.w-300 {
+  min-width: 300px;
+}
+
 .workbox {
   margin-top: 18px;
   background: white;
@@ -673,7 +684,7 @@ footer .footer-middle ul {
 footer .footer-links,
 footer .footer-bottom {
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-top: 20px;
   display: flex;
@@ -766,6 +777,82 @@ footer .footer-links a {
 
 .perspective .container {
   padding-top: 100px;
+}
+
+.footer-contact {
+  background: var(--dirty);
+  height: 300px;
+  display: block;
+}
+@media (max-width: 1200px) {
+  .footer-contact {
+    display: none;
+  }
+}
+
+.footer-contact .container {
+  margin-top: -180px;
+}
+
+.footer-contact::before {
+  background: var(--secondary);
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  content: "";
+}
+.our-products {
+  padding: 50px 0;
+}
+
+.our-products h1 {
+  margin-bottom: 30px;
+}
+
+#slide {
+  bottom: 0;
+  position: relative;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 220s;
+}
+#slide-2 {
+  bottom: 0;
+  position: relative;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: runRight;
+  -webkit-animation-duration: 240s;
+}
+
+#slide li,
+#slide-2 li {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes runRight {
+  0% {
+    right: 0%;
+  }
+  50% {
+    right: 100%;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 #backToHome {
