@@ -93,11 +93,6 @@
 .bg-pink {
   background-color: var(--pink);
 }
-
-.bg-primary {
-  background: var(--primary);
-}
-
 .text-white {
   color: white !important;
 }
@@ -105,11 +100,6 @@
 .w-100 {
   width: 100%;
 }
-
-.flex-1 {
-  flex: 1;
-}
-
 .gap-10 {
   gap: 10px;
 }
@@ -129,8 +119,6 @@ hr {
   font-size: 48px;
 }
 
-.bottom-text {
-}
 .bottom-text:after {
   content: "***";
   font-size: 36px;

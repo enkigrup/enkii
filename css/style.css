@@ -73,23 +73,9 @@ h1,
   font-size: 48px;
 }
 
-@media (max-width: 1200px) {
-  h1,
-  .h1 {
-    font-size: 40px;
-  }
-}
-
 h2,
 .h2 {
   font-size: 32px;
-}
-
-@media (max-width: 1200px) {
-  h2,
-  .h2 {
-    font-size: 24px;
-  }
 }
 
 h3,
@@ -101,35 +87,15 @@ h4,
 .h4 {
   font-size: 20px;
 }
-@media (max-width: 1200px) {
-  h4,
-  .h4 {
-    font-size: 18px;
-  }
-}
 
 h5,
 .h5 {
   font-size: 18px;
 }
 
-@media (max-width: 1200px) {
-  h5,
-  .h5 {
-    font-size: 14px;
-  }
-}
-
 h6,
 .h6 {
   font-size: 14px;
-}
-
-@media (max-width: 1200px) {
-  h6,
-  .h6 {
-    font-size: 11px;
-  }
 }
 
 p {
@@ -216,23 +182,6 @@ header .menu .left ul li {
   background: url("../images/menu.svg") no-repeat;
 }
 
-@media (max-width: 1200px) {
-  header .menu .right,
-  header .menu .left {
-    display: none;
-  }
-  .menu-link {
-    padding: 10px;
-  }
-
-  .mobile-menu-button {
-    display: block;
-  }
-  header .menu .logo-wrapper {
-    width: 100%;
-  }
-}
-
 main {
   min-height: 300px;
   width: 100%;
@@ -311,27 +260,6 @@ main {
   z-index: 7;
 }
 
-@media (max-width: 1200px) {
-  #home .home-content-bg .right,
-  #home .home-content-bg .left {
-    position: initial;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  #home .home-content-bg {
-    text-align: center;
-    background-image: none !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 20px;
-  }
-
-  #home .home-content-bg .list-style {
-    list-style-type: none;
-  }
-}
-
 #home .home-content-bg .left .icon-hand {
   position: absolute;
   left: -90px;
@@ -400,16 +328,6 @@ video {
   gap: 28px;
 }
 
-@media (max-width: 1200px) {
-  .workbox {
-    height: 380px;
-  }
-  .workbox .container {
-    gap: 0;
-    flex-direction: column !important;
-  }
-}
-
 .workbox .card {
   width: calc(100% - 20px);
   height: 180px;
@@ -426,12 +344,6 @@ video {
   right: 0;
   top: 30px;
   background-color: var(--primary);
-}
-
-@media (max-width: 1200px) {
-  .workbox .card img {
-    top: 0;
-  }
 }
 
 .workbox .card .up {
@@ -482,13 +394,6 @@ video {
 #workerroadmap .list-wrapper {
   display: flex;
   margin-bottom: 50px;
-}
-
-@media (max-width: 1200px) {
-  #workerroadmap .list-wrapper {
-    display: block;
-    margin-bottom: 50px;
-  }
 }
 
 #workerroadmap .lists {
@@ -553,19 +458,6 @@ video {
   padding-bottom: 100px;
 }
 
-@media screen and (max-width: 1200px) {
-  #seniorleague {
-    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
-  }
-
-  #seniorleague .filters {
-    overflow: auto !important;
-  }
-  #seniorleague .filters li {
-    width: 200px;
-    display: inline-block;
-  }
-}
 #seniorleague .filters {
   width: 100%;
   display: flex;
@@ -607,12 +499,6 @@ video {
   padding: 20px;
 }
 
-@media (max-width: 1200px) {
-  #about .ontheroad .ontheroad-content img {
-    display: none;
-  }
-}
-
 #about .ontheroad .ontheroad-content aside {
   flex: 3;
 }
@@ -636,17 +522,6 @@ video {
 
 #about .whatwehappen .container h1 {
   margin-bottom: 20px;
-}
-
-@media (max-width: 1200px) {
-  #about .whatwehappen {
-    clip-path: polygon(18% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
-  }
-
-  #about .whatwehappen .container {
-    width: 70%;
-    margin-left: 15%;
-  }
 }
 
 #about .whatwehappen .container img {
@@ -688,23 +563,6 @@ footer .footer-links a {
   color: white;
 }
 
-@media screen and (max-width: 1200px) {
-  footer .footer-middle ul {
-    font-size: 12px;
-  }
-
-  footer .footer-links,
-  footer .footer-middle ul {
-    font-size: 10px;
-  }
-  footer .footer-links img {
-    width: 30px;
-  }
-  footer .footer-links a {
-    display: block !important;
-  }
-}
-
 .profile-items {
   flex-flow: row wrap;
 }
@@ -732,19 +590,6 @@ footer .footer-links a {
   transition-timing-function: linear;
   box-shadow: 0px 12px 12px 4px rgba(33, 33, 33, 0.5);
   filter: none;
-}
-
-@media (max-width: 1200px) {
-  .profile {
-    width: 24%;
-    margin-bottom: 12px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .profile {
-    width: 49%;
-  }
 }
 
 .profile .profile-image {
@@ -786,29 +631,10 @@ footer .footer-links a {
   gap: 40px;
 }
 
-@media (max-width: 1200px) {
-  .perspective .container {
-    text-align: center;
-  }
-
-  .perspective .container .p-content {
-    display: block !important;
-  }
-
-  .perspective .container .p-content h5 {
-    margin-top: 40px;
-  }
-}
-
 .footer-contact {
   background: var(--dirty);
   height: 300px;
   display: block;
-}
-@media (max-width: 1200px) {
-  .footer-contact {
-    display: none;
-  }
 }
 
 .footer-contact .container {
@@ -895,13 +721,6 @@ footer .footer-links a {
   z-index: 10;
 }
 
-@media (max-width: 1200px) {
-  #backToHome {
-    bottom: 10px;
-    right: 10px;
-  }
-}
-
 #backToHome img {
   padding: 8px 6px;
 }
@@ -922,7 +741,141 @@ footer .footer-links a {
   display: inline;
 }
 @media screen and (max-width: 1200px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+  }
+  h2,
+  .h2 {
+    font-size: 24px;
+  }
+  h4,
+  .h4 {
+    font-size: 18px;
+  }
+  h5,
+  .h5 {
+    font-size: 14px;
+  }
+  h6,
+  .h6 {
+    font-size: 11px;
+  }
+
+  header .menu .right,
+  header .menu .left {
+    display: none;
+  }
+  .menu-link {
+    padding: 10px;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+  header .menu .logo-wrapper {
+    width: 100%;
+  }
+  #home .home-content-bg .right,
+  #home .home-content-bg .left {
+    position: initial;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #home .home-content-bg {
+    text-align: center;
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+  }
+
+  #home .home-content-bg .list-style {
+    list-style-type: none;
+  }
+
+  .workbox {
+    height: 380px;
+  }
+  .workbox .container {
+    gap: 0;
+    flex-direction: column !important;
+  }
+
+  .workbox .card img {
+    top: 0;
+  }
+
+  #workerroadmap .list-wrapper {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  #seniorleague {
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
+  }
+
+  #seniorleague .filters {
+    overflow: auto !important;
+  }
+  #seniorleague .filters li {
+    width: 200px;
+    display: inline-block;
+  }
+  #about .ontheroad .ontheroad-content img {
+    display: none;
+  }
+
+  #about .whatwehappen {
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 18% 100%, 0 50%);
+  }
+
+  #about .whatwehappen .container {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .profile {
+    width: 49%;
+    margin-bottom: 12px;
+  }
+  .perspective .container {
+    text-align: center;
+  }
+
+  .perspective .container .p-content {
+    display: block !important;
+  }
+
+  .perspective .container .p-content h5 {
+    margin-top: 40px;
+  }
+  .footer-contact {
+    display: none;
+  }
+
+  footer .footer-middle ul {
+    font-size: 12px;
+  }
+
+  footer .footer-links,
+  footer .footer-middle ul {
+    font-size: 10px;
+  }
+  footer .footer-links img {
+    width: 30px;
+  }
+  footer .footer-links a {
+    display: block !important;
+  }
+
   .hidden {
     display: none !important;
+  }
+
+  #backToHome {
+    bottom: 10px;
+    right: 10px;
   }
 }
