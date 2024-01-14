@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://www.enkigrup.com/
+Sitemap: https://www.enkigrup.com/hizmetlerimiz
+Sitemap: https://www.enkigrup.com/uzman-ekibimiz
+Sitemap: https://www.enkigrup.com/hakkimizda
+Sitemap: https://www.enkigrup.com/iletisim
