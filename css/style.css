@@ -1063,3 +1063,19 @@ hr {
 .mb-10 {
   margin-bottom: 10px;
 }
+
+#accept-cookie {
+  position: fixed;
+  bottom: 50px;
+  background: white;
+  width: 50%;
+  margin: 0 25%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#accept-cookie a{
+  background: var(--primary);
+  border-radius: 8px;
+  color: white;
+}

@@ -1,5 +1,9 @@
 $(window).load(function () {
   $("#home").height(window.innerHeight);
+  const accept = localStorage.getItem('accept-cookie');
+  if(accept){
+    $('#accept-cookie').hide();
+  }
 });
 
 $(window).on("resize", function () {
@@ -79,4 +83,10 @@ btn.on("click", function (e) {
 });
 
 const text = '© ' + (new Date()).getFullYear() + ' ENKİ GRUP. Tüm Hakları Saklıdır.';
-$('#copyright').text(text)
+$('#copyright').text(text);
+
+$('#accept').click(function(e){
+  e.preventDefault();
+  localStorage.setItem('accept-cookie', true);
+  $('#accept-cookie').hide();
+})
