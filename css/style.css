@@ -1,5 +1,4 @@
 @import url("./helper.css");
-@import url("./responsive.css");
 
 :root {
   --primary: #0389e2;
@@ -917,4 +916,13 @@ footer .footer-links a {
 #backToHome.show {
   opacity: 1;
   visibility: visible;
+}
+
+.hidden {
+  display: inline;
+}
+@media screen and (max-width: 1200px) {
+  .hidden {
+    display: none !important;
+  }
 }
