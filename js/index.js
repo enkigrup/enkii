@@ -77,3 +77,6 @@ btn.on("click", function (e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
 });
+
+const text = '© ' + (new Date()).getFullYear() + ' ENKİ GRUP. Tüm Hakları Saklıdır.';
+$('#copyright').text(text)
