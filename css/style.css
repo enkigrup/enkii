@@ -916,6 +916,11 @@ footer .footer-links a {
     bottom: 10px;
     right: 10px;
   }
+
+  #accept-cookie{
+    width: 85% !important;
+    margin: 0 5% !important;
+  }
 }
 
 /* Helper */
@@ -1072,6 +1077,7 @@ hr {
   margin: 0 25%;
   padding: 10px;
   border-radius: 8px;
+  z-index: 10;
 }
 
 #accept-cookie a{
