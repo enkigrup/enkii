@@ -612,6 +612,7 @@ footer .footer-links a {
 .profile .social-media-links {
   justify-content: center;
   padding: 9px 0 5px 0;
+  display: none;
 }
 
 .profile .social-media-links li {
