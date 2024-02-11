@@ -1,8 +1,10 @@
 $(window).load(function () {
+  $('#accept-cookie').hide();
   $("#home").height(window.innerHeight);
   const accept = localStorage.getItem('accept-cookie');
-  if(accept){
-    $('#accept-cookie').hide();
+  
+  if(!accept){
+    $('#accept-cookie').show();
   }
 });
 
